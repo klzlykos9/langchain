@@ -1,0 +1,30 @@
+# Langchain Core
+langchain 
+langchain-core 
+langchain-community
+
+grandalf   # for get graph ascii
+PyPDF   # to install PyPDFLoader for  document_loaders
+
+# OpenAI Integration
+langchain-openai 
+openai 
+
+# Anthropic Integration
+langchain-anthropic 
+
+# Google Gemini(PaLM) Integration
+langchain-google-genai
+google-generativeai
+
+# Hugging Face Integration
+langchain-huggingface
+transformers
+huggingface-hub
+
+# Enviroment Variable Management
+python-dotenv
+
+# Machine Learning Utilities
+numpy
+scikit-learn 
