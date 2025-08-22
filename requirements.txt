@@ -2,6 +2,7 @@
 langchain 
 langchain-core 
 langchain-community
+langchain-experimental
 
 grandalf   # for get graph ascii
 PyPDF   # to install PyPDFLoader for  document_loaders
