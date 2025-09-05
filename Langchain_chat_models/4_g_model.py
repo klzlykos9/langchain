@@ -7,13 +7,13 @@ from dotenv import load_dotenv
 load_dotenv()
 model = ChatGroq(
     model="deepseek-r1-distill-llama-70b",
-    temperature=0,
+    temperature=.5,
     max_tokens=None,
     reasoning_format="parsed",  # If supported by the model
 )
 
 prompt = PromptTemplate(
-    template = 'tell me 5 points on {topic}',
+    template = 'give me update details report with 10000 words  {topic}',
     input_variables = ['topic']
 )
 
@@ -21,7 +21,7 @@ parser = StrOutputParser()
 
 chain = RunnableSequence(prompt, model, parser)
 
-print(chain.invoke({'topic':'AI'}))
+print(chain.invoke({'topic':' guide me through ml. '}))
 # messages = [
 #    ("system", "You are a helpful assistant that translates English to French."),
 #    ("human", "I love programming."),

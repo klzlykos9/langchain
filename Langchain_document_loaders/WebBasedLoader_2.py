@@ -17,8 +17,7 @@ prompt = PromptTemplate(
 )
 
 parser = StrOutputParser()
-url = 'https://www.amazon.in/HP-Laptop-15-6-inch-Graphics-fc0154AU/dp/B0D3HG5CMG/ref=sr_1_3?adgrpid=94221362531&ext_vrnc=hi&hvadid=590450674960&hvdev=c&hvlocphy=9300861&hvnetw=g&hvqmt=e&hvrand=7784002373648542449&hvtargid=kwd-353766051967&hydadcr=16601_2163995&mcid=1c11e2187bb238fb8c38026e68aa3fa6&sr=8-3'
-
+url = 'https://www.nbphe.org/certified-in-public-health/cph-eligibility-requirements/'
 loader = WebBaseLoader(url)
 
 
@@ -26,4 +25,4 @@ docs = loader.load()
 
 chain = prompt | model | parser
 
-print(chain.invoke({'question': 'no os usb 2.0 ports ?', 'text':docs[0].page_content}))
+print(chain.invoke({'question': 'get me all job posts available on this website ?', 'text':docs[0].page_content}))

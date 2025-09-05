@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "KLZ AI Chat Assistant",
+    "version": "1.0",
+    "description": "Chat with AI and query website content",
+    "permissions": ["activeTab", "scripting", "storage"],
+    "host_permissions": ["<all_urls>"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
+  
